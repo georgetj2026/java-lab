@@ -11,13 +11,21 @@ public class frequency
  {
 	public static void main (String[]args)
 	{
-	 Scanner sc = new Scanner(System.in);
+		 Scanner sc = new Scanner(System.in);
 	 System.out.println("enter the string");
 	 String name= sc.next();
-	 int count=0;
 	 System.out.println("enter the character");
 	 String character= sc.next();
 	 char chara=character.charAt(0);
+	 int checks= check(name,chara);
+     if(checks==0)
+    	 System.out.println("The character is not present");
+     else
+    	 System.out.println("The character is present & frequency is "+checks);
+	 }
+	 static int check(String name,char chara)
+	 {
+     int count=0;
 	 char [] chararray=name.toCharArray();
 	 int length= name.length();
 	 for(int i=0;i<length;i++)
@@ -25,9 +33,6 @@ public class frequency
 	   if(chararray[i]==chara)
 	   count++;
 	   }
-	 if(count==0)
-		 System.out.println("The character is not present");
-	 else 
-		 System.out.println("The character is present & frequency is "+count);
-	}
+	 return count;
+	 }
 	}
