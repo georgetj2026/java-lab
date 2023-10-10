@@ -20,18 +20,18 @@ l=sc.nextInt();
 br=sc.nextInt();
 System.out.println("Enter radius of circle");
 r=sc.nextFloat();
-shape area=new shape();
-shape.area(h,b);
-shape.area(l,br);
-shape.area(r);
+shape area1=new shape();
+area1.area(h,b);
+area1.area(l,br);
+area1.area(r);
 }
 }
 class shape
 {
- public static void area (float h,float b)	{
+ public void area (float h,float b)	{
 	System.out.println("area of triangle"+(h*b)/2); }
- public static void area (int l,int b)	{
+ public void area (int l,int b)	{
 	System.out.println("area of rectangle ="+(l*b)); }
- public static void area(float r)	{
+ public void area(float r)	{
 	System.out.println("area of circle="+(3.14*r*r));}
 }
