@@ -1,3 +1,10 @@
+/*******************************************************
+ * file:matrix multliplication
+ * description :matrix multiplication
+ * Author : jo
+ * version :1.0
+ * Date:10/10/2023
+ */
 package javalab;
 import java.util.Scanner;
 public class matrixmulti {
