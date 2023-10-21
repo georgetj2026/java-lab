@@ -60,7 +60,7 @@ class manager extends employee {
 		System.out.println("Enter epartment"); 
 		department=sc.next(); }
 	public void printdepartment() {
-		System.out.println("Department:"+specialisation); }
+		System.out.println("Department:"+department); }
 }
 
 
