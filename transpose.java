@@ -1,3 +1,10 @@
+/*******************************************************
+ * file:matrix transpose
+ * description :to find transpose of a matrix
+ * Author : jo
+ * version :1.0
+ * Date:01/11/2023
+ */
 package javalab;
 import java.util.Scanner;
 
