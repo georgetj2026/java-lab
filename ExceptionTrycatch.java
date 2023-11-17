@@ -1,3 +1,9 @@
+/*******************************************************
+ * file: exceptiontry
+ * description :progarm that shows the usage of try catch
+ * Author : jo
+ * Date:10/11/2023
+ */
 import java.util.Scanner;
 public class ExceptionTrycatch {
 public static void main(String[] args) {
