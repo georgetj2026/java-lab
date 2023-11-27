@@ -2,6 +2,7 @@
  * file: palindrome
  * description :check a no is palindrome or not
  * Author : jo
+ * vesion : 1.0
  * Date:03/10/2023
  */
 package javalab;
