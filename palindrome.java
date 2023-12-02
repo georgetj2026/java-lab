@@ -31,3 +31,13 @@ public class palindrome {
 	     return true;
 		}
 }
+
+OUTPUT:
+
+enter the string
+madam
+string is palindrome
+
+enter the string
+hello
+string is not palindrome
