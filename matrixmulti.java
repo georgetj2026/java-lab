@@ -57,5 +57,39 @@ if(c1==r2)
    } 
 else
 	System.out.println("multliplication not possible");
-}
-}
+}}
+//
+OUTPUT:
+enter order of matrix1
+2
+2
+enter order of matrix2
+2
+2
+enter matrix 1
+23
+45
+3
+7
+enter matrix 2
+11
+34
+29
+3
+First matrix is:
+	23	45
+	3	7
+Second matrix is:
+	11	34
+	29	3
+Resultant matrix is
+	1558	917
+	236	123
+enter order of matrix1
+2
+3
+enter order of matrix2
+4
+3
+multliplication not possible
+
