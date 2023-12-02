@@ -36,3 +36,16 @@ public class frequency
 	 return count;
 	 }
 	}
+
+OUTPUT:
+enter the string
+malayalam
+enter the character
+m
+The character is present & frequency is 2
+	
+enter the string
+hollywood
+enter the character
+m
+The character is not present
