@@ -4,6 +4,7 @@ class multiplication {
 	synchronized void printmultiplication(int num) {   
 		// synchronized the function-
 	    // without using the block
+		System.out.println("Multliplication table of "+num);
 		for (int i=1; i<=5;i++)
 			System.out.println(i+"x"+num+"="+i*num);
 		
@@ -17,7 +18,6 @@ class Mythread1 extends Thread{
 	this.num=num;
 		}
 	public void run() { 
-	System.out.println("THREAD 1");
 		t.printmultiplication(num);
 	}
 }
@@ -29,7 +29,6 @@ class Mythread2 extends Thread{
 	this.num=num;
 		}
 	public void run() { 
-		System.out.println("THREAD 2");
 		t.printmultiplication(num);
 	}
 }
@@ -41,7 +40,6 @@ class Mythread3 extends Thread{
 	this.num=num;
 		}
 	public void run() {  // entry point of thread2
-		System.out.println("THREAD 3");
 		t.printmultiplication(num);
 	}
 }
