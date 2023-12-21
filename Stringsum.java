@@ -1,0 +1,58 @@
+package javaprgms;  
+
+    import java.io.File; 
+    import java.io.BufferedReader;
+    import java.io.BufferedWriter;
+	import java.io.FileReader;
+	import java.io.FileWriter;
+	import java.io.IOException;
+    import java.util.StringTokenizer;
+    
+	public class Stringsum {
+	    
+		   public static void main(String[] args) {
+		        // Input and output file paths
+		        String inputFilePath = "input.txt";
+		        String outputFilePath = "output.txt";
+
+		        try {
+		            // Read integers from the input file
+		            String line = readFromFile(inputFilePath);
+
+
+		            // Find the sum of all integers
+		            StringTokenizer tokenizer = new StringTokenizer(line);
+			        int sum = 0;
+			        System.out.print("Integers in the file: ");
+			        System.out.println(line);
+			        while (tokenizer.hasMoreTokens()) {
+			            sum += Integer.parseInt(tokenizer.nextToken());
+			        }
+		            // Write the sum to the output file
+		            writeToFile(outputFilePath, sum);
+
+		            System.out.println("Sum of integers: " + sum);
+		            System.out.println("Sum has been written to " + outputFilePath);
+		        } catch (IOException e) {
+		            e.printStackTrace();
+		        }
+		    }
+
+		    static String readFromFile(String filePath) throws IOException {
+		        StringBuilder content = new StringBuilder();
+		        try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
+		            String line;
+		            while ((line = br.readLine()) != null) {
+		                content.append(line);
+		            }
+		        }
+		        return content.toString();
+		    }
+
+		
+		    private static void writeToFile(String filePath, int sum) throws IOException {
+		        try (BufferedWriter bw = new BufferedWriter(new FileWriter(filePath))) {
+		            bw.write("Sum of integers: " + sum);
+		        }
+		    }
+		}
